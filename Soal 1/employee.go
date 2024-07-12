@@ -16,7 +16,7 @@ type Employee struct {
 	TotalSalary float64
 }
 
-// Function to create 100 employees
+// Fungsi untuk membuat 100 karyawan
 func CreateEmployees() []Employee {
 	rand.Seed(time.Now().UnixNano())
 	statuses := []string{"Permanent", "Contract", "Trainee"}
@@ -54,7 +54,7 @@ func CreateEmployees() []Employee {
 	return employees
 }
 
-// Function to calculate total salary
+// Fungsi untuk menghitung total gaji
 func CalculateTotalSalary(employee *Employee) {
 	employee.TotalSalary = employee.Salary + employee.Insurance + employee.Overtime + employee.Allowance
 }
